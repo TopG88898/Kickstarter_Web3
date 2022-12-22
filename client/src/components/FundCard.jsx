@@ -6,7 +6,7 @@ const FundCard = ({ owner, title, description, target, deadline, amountCollected
     const remainingDays = daysLeft(deadline);
 
   return (
-     <div className='sm:w-[288px] w-[428px] sm:h-auto h-[480px] rounded-[15px] bg-[#1c1c24] cursor-pointer sm:mx-0 mx-auto sm:my-0 my-5' onClick={handleClick}>
+     <div className='sm:w-[288px] w-[428px] sm:h-auto h-[480px] rounded-[15px] bg-[#16161a] cursor-pointer sm:mx-0 mx-auto sm:my-0 my-5' onClick={handleClick}>
         <img src={image} className="w-full sm:h-[158px] h-[250px] object-cover rounded-[15px]" />
         <div className='flex flex-col p-4'>
             <div className='flex items-center mb-[18px]'>
@@ -30,7 +30,7 @@ const FundCard = ({ owner, title, description, target, deadline, amountCollected
                 </div>
             </div>
             <div className='flex items-center mt-[20px] gap-[12px]'>
-                <div className='w-[30px] h-[30px] rounded-full flex justify-center items-center bg-[#13131a]'>
+                <div className='w-[30px] h-[30px] rounded-full flex justify-center items-center bg-black'>
                     <img src={thirdweb} className="w-1/2 h-1/2 object-contain" />
                 </div>
                 <p className='flex-1 font-epilogue font-normal text-[12px] text-[#808191] truncate'>by <span className='text-[#b2b3bd]'>{owner}</span></p>
