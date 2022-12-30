@@ -49,14 +49,12 @@ const Navbar = () => {
         {/* Small screen navigation */}
 
         <div className='sm:hidden flex justify-between relative items-center'>
-            <div className='w-[40px] h-[40px] rounded-[10px] bg-[#2c2f32] flex justify-center items-center cursor-pointer'>
             <Link to="/">
-                <Icon styles="w-[52px] h-[52px] bg-[#222228]" imgUrl={logo} />
+                <Icon styles="w-[45px] h-[45px] bg-[#222228]" imgUrl={logo} />
             </Link>
-            </div>
             <img 
                 src={menu} 
-                className="w-[22px] h-[22px] object-contain"
+                className="w-[20px] h-[20px] object-contain"
                 onClick={() => setToggleDrawer((prev) => !prev)}
             />
             <div className={`absolute top-[60px] right-0 left-0 bg-[#16161a] z-10 shadow-secondary rounded-[20px] py-6 ${!toggleDrawer ? '-translate-y-[100vh]' : 'translate-y-0'} transition-all duration-700`}>
